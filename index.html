@@ -4,11 +4,52 @@
 		<meta charset="UTF-8" />
 		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
 		<link rel="stylesheet" href="./src/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Vite + TS</title>
+		<title>HomePage</title>
 	</head>
 	<body>
-		<h1 class="text-4xl font-bold text-red-200 hover:text-red-500">Hello World</h1>
+	<!-- NAVBAR -->
+	<section class="header flex py-[23px] border-b border-[#F5F5F5] sm:px-0 px-[16px]">
+		<div class="navbar flex items-center mr-auto ml-auto justify-between  sm:w-[1418px] w-[390px]">
+			<a href="syte-logo"><img src="./src/images/Frame 10.png" alt="" /></a>
+
+			<ul class="list gap-[60px] font-sans text-[#71717A] p-0 hidden sm:flex">
+			<li class="hover:text-[black]"><a href="#">Home</a></li>
+			<li class="hover:text-[black]"><a href="#">Pages</a></li>
+			<li class="hover:text-[black]"><a href="#">Event</a></li>
+			<li class="hover:text-[black]"><a href="#">Partfolio</a></li>
+			<li class="hover:text-[black]"><a href="./pages/about-us.html">About Us</a></li>
+			</ul>
+
+			<div class="nav-btns gap-[30px] hidden sm:flex">
+				<button class="nav-btn border-[1px] py-[12px] px-[38px] rounded-[100px] border-[#FFD67E] text-[18px] font-bold cursor-pointer">Log in</button>
+				<button class="nav-btn py-[12px] px-[38px] rounded-[100px] bg-[#FFD67E] text-[18px] font-bold cursor-pointer">Sign Up</button>
+			</div>
+
+			<button class="sm:hidden w-8 h-8 bg-[#FFD67E] rounded-[50%] flex p-[5px]"><img src="./src/images/Group 1000002653.png" alt="" /></button>
+		</div>
+		</section>
+		<!-- lkDNg -->
+	<div class="events flex w-[342px] sm:w-[979px] flex-col justify-center items-center gap-[12px] border-1 sm:mt-[60px] mt-[40px] mx-auto">
+		<h1 class="title text-center text-[43px] leading-[48px] sm:text-[96px] sm:leading-[115.2px] font-extrabold tracking-[0px] text-black font-['Marcellus']">Experience Events Like Never Before.</h1>
+		<div class="flex flex-col items-center gap-[32px] w-[342px] sm:w-[676px]">
+			<p class="description text-[#525252] text-center font-normal text-[16px] sm:text-[18px] leading-[27px] font-jost ">Welcome to R event agency, where innovation meets excellence in event planning. We take pride in crafting extraordinary moments tailored to your vision.</p>
+			<div class="flex w-[203px] h-[64px] px-[10px] pr-[10px] pl-[32px] py-[10px] justify-center items-center gap-[24px] rounded-[100px] bg-[#000]">
+				<p class="nameBtn text-white text-center font-[400] text-[18px] leading-[27px] capitalize font-[Jost]">Get Started</p>
+				<img src="./src/images/Frame 12.png" alt="">
+			</div>
+			<div class="flex justify-center items-center gap-[12px] sm:mt-[10px] mt-[0px]">
+				<img src="./src/images/Frame 1171276504.png" alt="">
+				<p>Total Satisfied Client</p>
+			</div>
+		</div>
+	</div>
 		<script type="module" src="/src/main.ts"></script>
 	</body>
 </html>
